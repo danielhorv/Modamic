@@ -16,6 +16,15 @@ public class DynamicContentSizePresenterConfiguration {
         case bottom
     }
     
+    public enum ModalWidth {
+        /// Multiplier for the original width size
+        /// 1.0 is the same width as the parentViewController
+        case parentFactor(CGFloat)
+        
+        /// Fixed width for the modal
+        case fixed(CGFloat)
+    }
+    
     public typealias AnimationSettings = (duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping: CGFloat, initialSpringVelocity: CGFloat)
     
     /// Should the presented controller have rounded corners.
@@ -23,10 +32,6 @@ public class DynamicContentSizePresenterConfiguration {
     
     /// Radius of rounded corners for presented controller if roundCorners is true.
     public var cornerRadius: CGFloat = 10
-    
-    /// Multiplier for the original width size
-    /// 1.0 is the same width as the parentViewController
-    public var widthFactor: CGFloat = 0.9
     
     /// Keyboard showing animation duration
     public var showKeyboardAnimationDuration: TimeInterval = 0.5
@@ -54,6 +59,8 @@ public class DynamicContentSizePresenterConfiguration {
     
     /// Vertical position of the viewController
     public var modalVerticalPosition: ModalVerticalPosition = .bottom
+    
+    public var modalWidth: ModalWidth = .parentFactor(0.9)
     
     public init() { }
 }

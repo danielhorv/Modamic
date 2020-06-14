@@ -24,6 +24,13 @@ public class DynamicContentSizePresentationController: UIPresentationController 
         return $0
     }(UIView())
     
+    private var preferredWidth: CGFloat {
+        switch configuration.modalWidth {
+        case .parentFactor(let factor): return originalWidth * factor
+        case .fixed(let fixedWidth): return fixedWidth
+        }
+    }
+    
     // The ViewController which will presented
     private var wrappedPresentedController: UIViewController {
         if let navigationController = presentedViewController as? UINavigationController, let visibleViewController = navigationController.visibleViewController {
@@ -103,13 +110,10 @@ public class DynamicContentSizePresentationController: UIPresentationController 
             presentedViewController.view.layer.cornerRadius = configuration.cornerRadius
         }
         
-        // For the right height calculation, need to be set the preferred modal height
-//        if let presentingViewController = presentingViewController {
-        presentedViewController.view.frame.size.width = originalWidth * configuration.widthFactor
-//        }
+        // For the right height calculation, need to be set the preferred modal width
+        presentedViewController.view.frame.size.width = preferredWidth
         
         // Because of the autoLayouted UILabel, need to refresh the layout
-        presentedViewController.view.setNeedsLayout()
         presentedViewController.view.layoutIfNeeded()
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -123,8 +127,6 @@ public class DynamicContentSizePresentationController: UIPresentationController 
     
     override public func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
         guard containerView != nil else { return .zero }
-
-        let preferredWidth = originalWidth * configuration.widthFactor
         
         let targetSize = CGSize(width: preferredWidth, height: UIView.layoutFittingCompressedSize.height)
         

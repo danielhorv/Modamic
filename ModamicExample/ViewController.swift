@@ -59,6 +59,7 @@ class ViewController: UIViewController {
     
     @objc private func handleUpdateButton() {
         presenter.configuration.modalVerticalPosition = .center
+        presenter.configuration.modalWidth = .fixed(125)
         
         let updateViewController = UpdateViewController()
         
@@ -67,6 +68,7 @@ class ViewController: UIViewController {
     
     @objc private func handleLoginButton() {
         presenter.configuration.modalVerticalPosition = .bottom
+        presenter.configuration.modalWidth = .parentFactor(0.9)
         
         let loginViewController = LoginViewController()
         
@@ -75,7 +77,7 @@ class ViewController: UIViewController {
     
     @objc private func handleMessageButton() {
         presenter.configuration.modalVerticalPosition = .top
-//        presenter.configuration.widthFactor = 0.5
+        presenter.configuration.modalWidth = .fixed(250)
         
         let newMessageViewController = NewMessageViewController()
         
