@@ -19,26 +19,10 @@ extension UILabel {
     }
 
     public override func updateConstraints() {
-        print(text)
-        print(bounds.size.width)
         if preferredMaxLayoutWidth != bounds.size.width {
             preferredMaxLayoutWidth = bounds.size.width
-            print(preferredMaxLayoutWidth)
-            print(bounds.size)
         }
 
         super.updateConstraints()
-
-        print(preferredMaxLayoutWidth)
-        print(bounds.size)
-    }
-    
-    public override func layoutSubviews() {
-        if preferredMaxLayoutWidth != bounds.size.width {
-            preferredMaxLayoutWidth = bounds.size.width
-            print(preferredMaxLayoutWidth)
-            print(bounds.size)
-        }
-        super.layoutSubviews()
     }
 }
