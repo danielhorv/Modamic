@@ -1,6 +1,6 @@
 //
-//  DynamicContentSizePresenterConfiguration.swift
-//  DynamicContentSizePresenter
+//  ModamicConfiguration.swift
+//  ModamicPresenter
 //
 //  Created by Daniel Horvath on 29.03.20.
 //  Copyright © 2020 Daniel Horvath. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DynamicContentSizePresenterConfiguration {
+public class ModamicConfiguration {
     
     public enum ModalVerticalPosition {
         case top

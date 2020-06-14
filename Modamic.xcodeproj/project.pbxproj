@@ -15,10 +15,10 @@
 		9E2B75822496AF260034E303 /* TopAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B75812496AF260034E303 /* TopAnimatedTransitioning.swift */; };
 		9E67C73124898FF6005B8233 /* Modamic.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E67C72F24898FF6005B8233 /* Modamic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E67C73D24899047005B8233 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73824899047005B8233 /* UILabel+Extension.swift */; };
-		9E67C73E24899047005B8233 /* DynamicContentSizePresenterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73924899047005B8233 /* DynamicContentSizePresenterConfiguration.swift */; };
+		9E67C73E24899047005B8233 /* ModamicConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73924899047005B8233 /* ModamicConfiguration.swift */; };
 		9E67C73F24899047005B8233 /* DynamicContentSizePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73A24899047005B8233 /* DynamicContentSizePresentationController.swift */; };
 		9E67C74024899047005B8233 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73B24899047005B8233 /* UIViewController+Extension.swift */; };
-		9E67C74124899047005B8233 /* DynamicContentSizePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73C24899047005B8233 /* DynamicContentSizePresenter.swift */; };
+		9E67C74124899047005B8233 /* ModamicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73C24899047005B8233 /* ModamicPresenter.swift */; };
 		9E67C74924899125005B8233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C74824899125005B8233 /* AppDelegate.swift */; };
 		9E67C74D24899125005B8233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C74C24899125005B8233 /* ViewController.swift */; };
 		9E67C7522489912C005B8233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E67C7512489912C005B8233 /* Assets.xcassets */; };
@@ -58,10 +58,10 @@
 		9E67C72F24898FF6005B8233 /* Modamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modamic.h; sourceTree = "<group>"; };
 		9E67C73024898FF6005B8233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E67C73824899047005B8233 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
-		9E67C73924899047005B8233 /* DynamicContentSizePresenterConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicContentSizePresenterConfiguration.swift; sourceTree = "<group>"; };
+		9E67C73924899047005B8233 /* ModamicConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModamicConfiguration.swift; sourceTree = "<group>"; };
 		9E67C73A24899047005B8233 /* DynamicContentSizePresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicContentSizePresentationController.swift; sourceTree = "<group>"; };
 		9E67C73B24899047005B8233 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		9E67C73C24899047005B8233 /* DynamicContentSizePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicContentSizePresenter.swift; sourceTree = "<group>"; };
+		9E67C73C24899047005B8233 /* ModamicPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModamicPresenter.swift; sourceTree = "<group>"; };
 		9E67C74624899125005B8233 /* ModamicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModamicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E67C74824899125005B8233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E67C74C24899125005B8233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				9E67C73A24899047005B8233 /* DynamicContentSizePresentationController.swift */,
-				9E67C73C24899047005B8233 /* DynamicContentSizePresenter.swift */,
-				9E67C73924899047005B8233 /* DynamicContentSizePresenterConfiguration.swift */,
+				9E67C73C24899047005B8233 /* ModamicPresenter.swift */,
+				9E67C73924899047005B8233 /* ModamicConfiguration.swift */,
 				9E67C73824899047005B8233 /* UILabel+Extension.swift */,
 				9E67C73B24899047005B8233 /* UIViewController+Extension.swift */,
 				9E2B75812496AF260034E303 /* TopAnimatedTransitioning.swift */,
@@ -276,9 +276,9 @@
 			files = (
 				9E2B75822496AF260034E303 /* TopAnimatedTransitioning.swift in Sources */,
 				9E67C74024899047005B8233 /* UIViewController+Extension.swift in Sources */,
-				9E67C73E24899047005B8233 /* DynamicContentSizePresenterConfiguration.swift in Sources */,
+				9E67C73E24899047005B8233 /* ModamicConfiguration.swift in Sources */,
 				9E67C73F24899047005B8233 /* DynamicContentSizePresentationController.swift in Sources */,
-				9E67C74124899047005B8233 /* DynamicContentSizePresenter.swift in Sources */,
+				9E67C74124899047005B8233 /* ModamicPresenter.swift in Sources */,
 				9E67C73D24899047005B8233 /* UILabel+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

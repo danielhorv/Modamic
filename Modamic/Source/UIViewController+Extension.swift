@@ -1,6 +1,6 @@
 //
 //  UIViewController+Extension.swift
-//  DynamicContentSizePresenter
+//  ModamicPresenter
 //
 //  Created by Daniel Horvath on 29.03.20.
 //  Copyright © 2020 Daniel Horvath. All rights reserved.

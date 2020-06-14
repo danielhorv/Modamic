@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DynamicContentSizePresenter: NSObject, UIViewControllerTransitioningDelegate {
+public class ModamicPresenter: NSObject, UIViewControllerTransitioningDelegate {
     
     public let configuration: DynamicContentSizePresenterConfiguration
         
@@ -18,7 +18,7 @@ public class DynamicContentSizePresenter: NSObject, UIViewControllerTransitionin
     }
 }
 
-public extension DynamicContentSizePresenter {
+public extension ModamicPresenter {
     
     func presentModal(viewController: UIViewController, on presenterViewController: UIViewController?, completion: (() -> Void)?) {
         viewController.transitioningDelegate = self

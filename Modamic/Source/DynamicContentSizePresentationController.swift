@@ -1,6 +1,6 @@
 //
 //  DynamicContentSizePresentationController.swift
-//  DynamicContentSizePresenter
+//  ModamicPresenter
 //
 //  Created by Daniel Horvath on 29.03.20.
 //  Copyright © 2020 Daniel Horvath. All rights reserved.
@@ -12,7 +12,7 @@ public class DynamicContentSizePresentationController: UIPresentationController 
     
     private var keyboardIsShowing: Bool = false
 
-    private let configuration: DynamicContentSizePresenterConfiguration
+    private let configuration: ModamicConfiguration
     
     private let originalWidth: CGFloat
     
@@ -94,7 +94,7 @@ public class DynamicContentSizePresentationController: UIPresentationController 
         return presentedViewFrame
     }
         
-    public init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, configuration: DynamicContentSizePresenterConfiguration) {
+    public init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, configuration: ModamicConfiguration) {
         self.configuration = configuration
         self.originalWidth = presentedViewController.view.frame.width
         

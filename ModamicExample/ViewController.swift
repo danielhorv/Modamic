@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         return $0
     }(UIButton(type: .system))
     
-    private let presenter = DynamicContentSizePresenter()
+    private let presenter = ModamicPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
