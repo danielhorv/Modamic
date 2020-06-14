@@ -10,9 +10,9 @@ import UIKit
 
 public class ModamicPresenter: NSObject, UIViewControllerTransitioningDelegate {
     
-    public let configuration: DynamicContentSizePresenterConfiguration
+    public let configuration: ModamicConfiguration
         
-    public init(configuration: DynamicContentSizePresenterConfiguration = DynamicContentSizePresenterConfiguration()) {
+    public init(configuration: ModamicConfiguration = ModamicConfiguration()) {
         self.configuration = configuration
         super.init()
     }
