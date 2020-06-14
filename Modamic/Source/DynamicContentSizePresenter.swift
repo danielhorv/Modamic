@@ -29,4 +29,30 @@ public extension DynamicContentSizePresenter {
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return DynamicContentSizePresentationController(presentedViewController: presented, presenting: presenting, configuration: configuration)
      }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        switch configuration.animatedTransition {
+        case .bottom:
+            return nil
+            
+        case .top:
+            return TopAnimatedTransitioning(isPresenting: true)
+            
+        case .custom(forPresented: let presentedAnimatedTransitioning, forDismissed: _):
+            return presentedAnimatedTransitioning
+        }
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        switch configuration.animatedTransition {
+        case .bottom:
+            return nil
+            
+        case .top:
+            return TopAnimatedTransitioning(isPresenting: false)
+            
+        case .custom(forPresented: _, forDismissed: let dismissedAnimatedTransitioning):
+            return dismissedAnimatedTransitioning
+        }
+    }
 }

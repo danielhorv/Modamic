@@ -25,6 +25,12 @@ public class DynamicContentSizePresenterConfiguration {
         case fixed(CGFloat)
     }
     
+    public enum AnimatedTransition {
+        case bottom
+        case top
+        case custom(forPresented: UIViewControllerAnimatedTransitioning, forDismissed: UIViewControllerAnimatedTransitioning)
+    }
+    
     public typealias AnimationSettings = (duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping: CGFloat, initialSpringVelocity: CGFloat)
     
     /// Should the presented controller have rounded corners.
@@ -60,7 +66,11 @@ public class DynamicContentSizePresenterConfiguration {
     /// Vertical position of the viewController
     public var modalVerticalPosition: ModalVerticalPosition = .bottom
     
+    /// Width ot the modal viewController
     public var modalWidth: ModalWidth = .parentFactor(0.9)
+    
+    /// Animated transition for the modal
+    public var animatedTransition: AnimatedTransition = .bottom
     
     public init() { }
 }

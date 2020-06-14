@@ -12,6 +12,7 @@
 		9E2B757A249659050034E303 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B7579249659050034E303 /* NewMessageViewController.swift */; };
 		9E2B757C249659270034E303 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B757B249659270034E303 /* LoginViewController.swift */; };
 		9E2B757E249659420034E303 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B757D249659420034E303 /* UpdateViewController.swift */; };
+		9E2B75822496AF260034E303 /* TopAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B75812496AF260034E303 /* TopAnimatedTransitioning.swift */; };
 		9E67C73124898FF6005B8233 /* Modamic.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E67C72F24898FF6005B8233 /* Modamic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E67C73D24899047005B8233 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73824899047005B8233 /* UILabel+Extension.swift */; };
 		9E67C73E24899047005B8233 /* DynamicContentSizePresenterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73924899047005B8233 /* DynamicContentSizePresenterConfiguration.swift */; };
@@ -52,6 +53,7 @@
 		9E2B7579249659050034E303 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		9E2B757B249659270034E303 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9E2B757D249659420034E303 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		9E2B75812496AF260034E303 /* TopAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		9E67C72C24898FF6005B8233 /* Modamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Modamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E67C72F24898FF6005B8233 /* Modamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modamic.h; sourceTree = "<group>"; };
 		9E67C73024898FF6005B8233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				9E67C73924899047005B8233 /* DynamicContentSizePresenterConfiguration.swift */,
 				9E67C73824899047005B8233 /* UILabel+Extension.swift */,
 				9E67C73B24899047005B8233 /* UIViewController+Extension.swift */,
+				9E2B75812496AF260034E303 /* TopAnimatedTransitioning.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2B75822496AF260034E303 /* TopAnimatedTransitioning.swift in Sources */,
 				9E67C74024899047005B8233 /* UIViewController+Extension.swift in Sources */,
 				9E67C73E24899047005B8233 /* DynamicContentSizePresenterConfiguration.swift in Sources */,
 				9E67C73F24899047005B8233 /* DynamicContentSizePresentationController.swift in Sources */,
