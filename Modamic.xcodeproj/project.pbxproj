@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9E2B7574249576E60034E303 /* Modamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E67C72C24898FF6005B8233 /* Modamic.framework */; };
 		9E2B7575249576E60034E303 /* Modamic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E67C72C24898FF6005B8233 /* Modamic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E2B757A249659050034E303 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B7579249659050034E303 /* NewMessageViewController.swift */; };
+		9E2B757C249659270034E303 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B757B249659270034E303 /* LoginViewController.swift */; };
+		9E2B757E249659420034E303 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B757D249659420034E303 /* UpdateViewController.swift */; };
 		9E67C73124898FF6005B8233 /* Modamic.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E67C72F24898FF6005B8233 /* Modamic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E67C73D24899047005B8233 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73824899047005B8233 /* UILabel+Extension.swift */; };
 		9E67C73E24899047005B8233 /* DynamicContentSizePresenterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73924899047005B8233 /* DynamicContentSizePresenterConfiguration.swift */; };
@@ -17,7 +20,6 @@
 		9E67C74124899047005B8233 /* DynamicContentSizePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73C24899047005B8233 /* DynamicContentSizePresenter.swift */; };
 		9E67C74924899125005B8233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C74824899125005B8233 /* AppDelegate.swift */; };
 		9E67C74D24899125005B8233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C74C24899125005B8233 /* ViewController.swift */; };
-		9E67C75024899125005B8233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E67C74E24899125005B8233 /* Main.storyboard */; };
 		9E67C7522489912C005B8233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E67C7512489912C005B8233 /* Assets.xcassets */; };
 		9E67C7552489912C005B8233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E67C7532489912C005B8233 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9E2B7579249659050034E303 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
+		9E2B757B249659270034E303 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9E2B757D249659420034E303 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		9E67C72C24898FF6005B8233 /* Modamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Modamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E67C72F24898FF6005B8233 /* Modamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modamic.h; sourceTree = "<group>"; };
 		9E67C73024898FF6005B8233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +63,6 @@
 		9E67C74624899125005B8233 /* ModamicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModamicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E67C74824899125005B8233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E67C74C24899125005B8233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9E67C74F24899125005B8233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E67C7512489912C005B8233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E67C7542489912C005B8233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E67C7562489912C005B8233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +92,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E2B757F249659520034E303 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				9E2B7579249659050034E303 /* NewMessageViewController.swift */,
+				9E2B757B249659270034E303 /* LoginViewController.swift */,
+				9E2B757D249659420034E303 /* UpdateViewController.swift */,
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 		9E67C72224898FF5005B8233 = {
@@ -134,9 +148,9 @@
 		9E67C74724899125005B8233 /* ModamicExample */ = {
 			isa = PBXGroup;
 			children = (
+				9E2B757F249659520034E303 /* Modals */,
 				9E67C74824899125005B8233 /* AppDelegate.swift */,
 				9E67C74C24899125005B8233 /* ViewController.swift */,
-				9E67C74E24899125005B8233 /* Main.storyboard */,
 				9E67C7512489912C005B8233 /* Assets.xcassets */,
 				9E67C7532489912C005B8233 /* LaunchScreen.storyboard */,
 				9E67C7562489912C005B8233 /* Info.plist */,
@@ -247,7 +261,6 @@
 			files = (
 				9E67C7552489912C005B8233 /* LaunchScreen.storyboard in Resources */,
 				9E67C7522489912C005B8233 /* Assets.xcassets in Resources */,
-				9E67C75024899125005B8233 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2B757C249659270034E303 /* LoginViewController.swift in Sources */,
 				9E67C74D24899125005B8233 /* ViewController.swift in Sources */,
+				9E2B757A249659050034E303 /* NewMessageViewController.swift in Sources */,
 				9E67C74924899125005B8233 /* AppDelegate.swift in Sources */,
+				9E2B757E249659420034E303 /* UpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +302,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9E67C74E24899125005B8233 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9E67C74F24899125005B8233 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9E67C7532489912C005B8233 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
