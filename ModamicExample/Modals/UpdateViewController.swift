@@ -21,19 +21,28 @@ class UpdateViewController: UIViewController {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.font = UIFont.systemFont(ofSize: 20)
         $0.textAlignment = .center
-        $0.text = "Update available You have a new message"
+        $0.text = "Update available"
         $0.numberOfLines = 0
         return $0
     }(UILabel())
     
-    private let changelogLabel: UITextView = {
+    private let iconLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.font = UIFont.systemFont(ofSize: 17)
-        $0.text = "A changelog is a log or record of all notable changes made to a project. The project is often a website or software project, and the changelog usually includes records of changes such as bug fixes, new features, etc. Some open-source projects include a changelog as one of the top-level files in their distribution."
-        $0.isScrollEnabled = false
+        $0.font = UIFont.systemFont(ofSize: 30)
+        $0.textAlignment = .center
+        $0.text = "🎉"
         $0.isHidden = true
         return $0
-    }(UITextView())
+    }(UILabel())
+    
+    private let changelogLabel: UILabel = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.font = UIFont.systemFont(ofSize: 17)
+        $0.text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        $0.numberOfLines = 0
+        $0.isHidden = true
+        return $0
+    }(UILabel())
     
     private let changelogButton: UIButton = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -64,8 +73,13 @@ class UpdateViewController: UIViewController {
     }
     
     @objc private func handleChangelogButton() {
+        iconLabel.isHidden.toggle()
         changelogButton.isHidden.toggle()
         changelogLabel.isHidden.toggle()
+        
+        // WTF?!
+        iconLabel.setNeedsDisplay()
+        changelogLabel.setNeedsDisplay()
         
         // Runtime resize the modal
         setPreferredContentSizeFromAutolayout()
@@ -78,6 +92,7 @@ class UpdateViewController: UIViewController {
         view.backgroundColor = .white
         
         containerStackView.addArrangedSubview(titleLabel)
+        containerStackView.addArrangedSubview(iconLabel)
         containerStackView.addArrangedSubview(changelogLabel)
         containerStackView.addArrangedSubview(changelogButton)
         containerStackView.addArrangedSubview(closeButton)

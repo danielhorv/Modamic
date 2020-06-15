@@ -20,8 +20,7 @@ class NewMessageViewController: UIViewController {
     private let titleLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.font = UIFont.systemFont(ofSize: 20)
-        $0.textAlignment = .center
-        $0.text = "Update available You have a new message"
+        $0.text = "You have a new message"
         $0.numberOfLines = 0
         return $0
     }(UILabel())
@@ -29,7 +28,7 @@ class NewMessageViewController: UIViewController {
     private let changelogLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.font = UIFont.systemFont(ofSize: 17)
-        $0.text = "A changelog is a log or record of all notable changes made to a project. The project is often a website or software project, and the changelog usually includes records of changes such as bug fixes, new features, etc. Some open-source projects include a changelog as one of the top-level files in their distribution."
+        $0.text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
         $0.numberOfLines = 0
         $0.lineBreakMode = .byWordWrapping
         return $0
@@ -43,7 +42,7 @@ class NewMessageViewController: UIViewController {
     private func setupView() {
         view.layer.cornerRadius = 10
        
-        view.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        view.layoutMargins = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
         
         view.backgroundColor = .white
         
