@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name        		  = "Modamic"
-  spec.version      	  = "0.0.1"
+  spec.version      	  = ENV['LIB_VERSION']
   spec.summary		      = "A short description of Modamic."
   spec.description  	  = <<-DESC
   						  Lightweight, configurable modal presentation framework
