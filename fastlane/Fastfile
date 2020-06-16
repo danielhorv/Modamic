@@ -1,0 +1,12 @@
+default_platform(:ios)
+
+platform :ios do
+  	lane :startCI do
+		xcodebuild(
+		    scheme: "Modamic",
+		    configuration: "Release",
+		    clean: true,
+		    build: true
+		)
+  	end
+end
