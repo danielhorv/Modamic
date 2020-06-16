@@ -1,0 +1,20 @@
+name: xcodebuild
+
+on:
+  push:
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Bundler & CocoaPods
+      run: |
+        gem install bundler
+        bundle install
+        bundle exec pod install
+    - name: Start CI
+      run: bundle exec fastlane startCI
