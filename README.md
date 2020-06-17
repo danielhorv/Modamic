@@ -1,5 +1,7 @@
 <img src="https://raw.githubusercontent.com/danielhorv/Modamic/master/logo.png" width="60%" alt="Modamic"/>
 
+[![xcodebuild](https://github.com/danielhorv/Modamic/workflows/xcodebuild/badge.svg)](https://github.com/danielhorv/Modamic/actions?query=workflow%3Axcodebuild)
+
 Lightweight library for presenting UIViewController in Modal.
 
 ⚠️ the library is WIP, if you find a bug, please create an issue or pull request
