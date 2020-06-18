@@ -40,7 +40,7 @@ The list of the available properties
     /// Radius of rounded corners for presented controller if roundCorners is true.
     public var cornerRadius: CGFloat = 10
     
-    /// Keyboard showing animation duration
+    /// Keyboard shows animation duration
     public var showKeyboardAnimationDuration: TimeInterval = 0.5
     
     /// Keyboard hiding animation duration
@@ -67,7 +67,7 @@ The list of the available properties
     /// Vertical position of the viewController
     public var modalVerticalPosition: ModalVerticalPosition = .bottom
     
-    /// Width ot the modal viewController
+    /// Width of the modal viewController
     public var modalWidth: ModalWidth = .parentFactor(0.9)
     
     /// Animated transition for the modal
@@ -75,11 +75,11 @@ The list of the available properties
 ````
 
 ### Runtime resizing
-The library supports AutoLayout, so when you add/remove some view or change the height of a subview, you just need to call the `setPreferredContentSizeFromAutolayout()` method of the UIViewController.
+The library supports AutoLayout, so if you add/remove some view or change the height of a subview, you just need to call the `setPreferredContentSizeFromAutolayout()` method of the UIViewController.
 This will recalculate the height and animate the resized modal - check the example project.
 
 ### Width
-There is 2 way to define the width of the modal
+There are 2 ways to define the width of the modal
  - dynamic: use a factor to scale the width of the parent ViewController
  - fixed: set a fixed width for the modal
 
