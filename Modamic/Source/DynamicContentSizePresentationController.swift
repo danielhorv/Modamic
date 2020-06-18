@@ -41,7 +41,7 @@ public class DynamicContentSizePresentationController: UIPresentationController 
     }
     
     // Height of the navigationBar if the modalViewController is an UINavigationController
-    private var navigationBarHeigt: CGFloat {
+    private var navigationBarHeight: CGFloat {
         guard let navigationController = presentedViewController as? UINavigationController else {
             return .zero
         }
@@ -134,7 +134,7 @@ public class DynamicContentSizePresentationController: UIPresentationController 
         var calculatedSize = wrappedPresentedController.view.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: .required, verticalFittingPriority: .defaultLow)
         
         // Add a NavigationBar height if needed
-        calculatedSize.height += navigationBarHeigt
+        calculatedSize.height += navigationBarHeight
         
         return calculatedSize
     }
