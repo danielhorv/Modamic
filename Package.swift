@@ -15,7 +15,7 @@ let package = Package(
         .target(
             name: "Modamic",
             dependencies: [],
-            path: "Sources"
+            path: "Sources/Modamic"
         ),
         .testTarget(
             name: "ModamicTests",
