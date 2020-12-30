@@ -7,33 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E2B7574249576E60034E303 /* Modamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E67C72C24898FF6005B8233 /* Modamic.framework */; };
-		9E2B7575249576E60034E303 /* Modamic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E67C72C24898FF6005B8233 /* Modamic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40343844C4944B27EC46BF4F /* Pods_ModamicExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A97626A1400A9083B30038 /* Pods_ModamicExample.framework */; };
 		9E2B757A249659050034E303 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B7579249659050034E303 /* NewMessageViewController.swift */; };
 		9E2B757C249659270034E303 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B757B249659270034E303 /* LoginViewController.swift */; };
 		9E2B757E249659420034E303 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B757D249659420034E303 /* UpdateViewController.swift */; };
-		9E2B75822496AF260034E303 /* TopAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B75812496AF260034E303 /* TopAnimatedTransitioning.swift */; };
-		9E67C73124898FF6005B8233 /* Modamic.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E67C72F24898FF6005B8233 /* Modamic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E67C73D24899047005B8233 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73824899047005B8233 /* UILabel+Extension.swift */; };
-		9E67C73E24899047005B8233 /* ModamicConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73924899047005B8233 /* ModamicConfiguration.swift */; };
-		9E67C73F24899047005B8233 /* DynamicContentSizePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73A24899047005B8233 /* DynamicContentSizePresentationController.swift */; };
-		9E67C74024899047005B8233 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73B24899047005B8233 /* UIViewController+Extension.swift */; };
-		9E67C74124899047005B8233 /* ModamicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C73C24899047005B8233 /* ModamicPresenter.swift */; };
 		9E67C74924899125005B8233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C74824899125005B8233 /* AppDelegate.swift */; };
 		9E67C74D24899125005B8233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C74C24899125005B8233 /* ViewController.swift */; };
 		9E67C7522489912C005B8233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E67C7512489912C005B8233 /* Assets.xcassets */; };
 		9E67C7552489912C005B8233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E67C7532489912C005B8233 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9E2B7576249576E60034E303 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9E67C72324898FF5005B8233 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9E67C72B24898FF6005B8233;
-			remoteInfo = Modamic;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9E2B7578249576E60034E303 /* Embed Frameworks */ = {
@@ -42,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9E2B7575249576E60034E303 /* Modamic.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,48 +31,46 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		79A97626A1400A9083B30038 /* Pods_ModamicExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModamicExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2B7579249659050034E303 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		9E2B757B249659270034E303 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9E2B757D249659420034E303 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
-		9E2B75812496AF260034E303 /* TopAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAnimatedTransitioning.swift; sourceTree = "<group>"; };
-		9E67C72C24898FF6005B8233 /* Modamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Modamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E67C72F24898FF6005B8233 /* Modamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modamic.h; sourceTree = "<group>"; };
-		9E67C73024898FF6005B8233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E67C73824899047005B8233 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
-		9E67C73924899047005B8233 /* ModamicConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModamicConfiguration.swift; sourceTree = "<group>"; };
-		9E67C73A24899047005B8233 /* DynamicContentSizePresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicContentSizePresentationController.swift; sourceTree = "<group>"; };
-		9E67C73B24899047005B8233 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		9E67C73C24899047005B8233 /* ModamicPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModamicPresenter.swift; sourceTree = "<group>"; };
 		9E67C74624899125005B8233 /* ModamicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModamicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E67C74824899125005B8233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E67C74C24899125005B8233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E67C7512489912C005B8233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E67C7542489912C005B8233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E67C7562489912C005B8233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FF7742AB849CDF1558C26C6 /* Pods-ModamicExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModamicExample.debug.xcconfig"; path = "Target Support Files/Pods-ModamicExample/Pods-ModamicExample.debug.xcconfig"; sourceTree = "<group>"; };
+		DEF92C94EAC9F1D0779E63A0 /* Pods-ModamicExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModamicExample.release.xcconfig"; path = "Target Support Files/Pods-ModamicExample/Pods-ModamicExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9E67C72924898FF6005B8233 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9E67C74324899125005B8233 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E2B7574249576E60034E303 /* Modamic.framework in Frameworks */,
+				40343844C4944B27EC46BF4F /* Pods_ModamicExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79139EB8FA5070F84DE2FC5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FF7742AB849CDF1558C26C6 /* Pods-ModamicExample.debug.xcconfig */,
+				DEF92C94EAC9F1D0779E63A0 /* Pods-ModamicExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9E2B7573249576E60034E303 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79A97626A1400A9083B30038 /* Pods_ModamicExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,43 +88,19 @@
 		9E67C72224898FF5005B8233 = {
 			isa = PBXGroup;
 			children = (
-				9E67C72E24898FF6005B8233 /* Modamic */,
 				9E67C74724899125005B8233 /* ModamicExample */,
 				9E67C72D24898FF6005B8233 /* Products */,
 				9E2B7573249576E60034E303 /* Frameworks */,
+				79139EB8FA5070F84DE2FC5A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		9E67C72D24898FF6005B8233 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E67C72C24898FF6005B8233 /* Modamic.framework */,
 				9E67C74624899125005B8233 /* ModamicExample.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9E67C72E24898FF6005B8233 /* Modamic */ = {
-			isa = PBXGroup;
-			children = (
-				9E67C73724899001005B8233 /* Source */,
-				9E67C72F24898FF6005B8233 /* Modamic.h */,
-				9E67C73024898FF6005B8233 /* Info.plist */,
-			);
-			path = Modamic;
-			sourceTree = "<group>";
-		};
-		9E67C73724899001005B8233 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				9E67C73A24899047005B8233 /* DynamicContentSizePresentationController.swift */,
-				9E67C73C24899047005B8233 /* ModamicPresenter.swift */,
-				9E67C73924899047005B8233 /* ModamicConfiguration.swift */,
-				9E67C73824899047005B8233 /* UILabel+Extension.swift */,
-				9E67C73B24899047005B8233 /* UIViewController+Extension.swift */,
-				9E2B75812496AF260034E303 /* TopAnimatedTransitioning.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		9E67C74724899125005B8233 /* ModamicExample */ = {
@@ -163,49 +118,21 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		9E67C72724898FF6005B8233 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9E67C73124898FF6005B8233 /* Modamic.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		9E67C72B24898FF6005B8233 /* Modamic */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9E67C73424898FF6005B8233 /* Build configuration list for PBXNativeTarget "Modamic" */;
-			buildPhases = (
-				9E67C72724898FF6005B8233 /* Headers */,
-				9E67C72824898FF6005B8233 /* Sources */,
-				9E67C72924898FF6005B8233 /* Frameworks */,
-				9E67C72A24898FF6005B8233 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Modamic;
-			productName = Modamic;
-			productReference = 9E67C72C24898FF6005B8233 /* Modamic.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		9E67C74524899125005B8233 /* ModamicExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E67C7572489912C005B8233 /* Build configuration list for PBXNativeTarget "ModamicExample" */;
 			buildPhases = (
+				14158923DD0925BA2AB102D0 /* [CP] Check Pods Manifest.lock */,
 				9E67C74224899125005B8233 /* Sources */,
 				9E67C74324899125005B8233 /* Frameworks */,
 				9E67C74424899125005B8233 /* Resources */,
 				9E2B7578249576E60034E303 /* Embed Frameworks */,
+				93332926833BC494C540154A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9E2B7577249576E60034E303 /* PBXTargetDependency */,
 			);
 			name = ModamicExample;
 			productName = ModamicExample;
@@ -222,10 +149,6 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Daniel Horvath";
 				TargetAttributes = {
-					9E67C72B24898FF6005B8233 = {
-						CreatedOnToolsVersion = 11.3;
-						LastSwiftMigration = 1130;
-					};
 					9E67C74524899125005B8233 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -244,20 +167,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E67C72B24898FF6005B8233 /* Modamic */,
 				9E67C74524899125005B8233 /* ModamicExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9E67C72A24898FF6005B8233 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9E67C74424899125005B8233 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,20 +184,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		9E67C72824898FF6005B8233 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		14158923DD0925BA2AB102D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E2B75822496AF260034E303 /* TopAnimatedTransitioning.swift in Sources */,
-				9E67C74024899047005B8233 /* UIViewController+Extension.swift in Sources */,
-				9E67C73E24899047005B8233 /* ModamicConfiguration.swift in Sources */,
-				9E67C73F24899047005B8233 /* DynamicContentSizePresentationController.swift in Sources */,
-				9E67C74124899047005B8233 /* ModamicPresenter.swift in Sources */,
-				9E67C73D24899047005B8233 /* UILabel+Extension.swift in Sources */,
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModamicExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
+		93332926833BC494C540154A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ModamicExample/Pods-ModamicExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ModamicExample/Pods-ModamicExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ModamicExample/Pods-ModamicExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		9E67C74224899125005B8233 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,14 +240,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9E2B7577249576E60034E303 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9E67C72B24898FF6005B8233 /* Modamic */;
-			targetProxy = 9E2B7576249576E60034E303 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9E67C7532489912C005B8233 /* LaunchScreen.storyboard */ = {
@@ -437,63 +373,9 @@
 			};
 			name = Release;
 		};
-		9E67C73524898FF6005B8233 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Modamic/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhorvath.Modamic;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9E67C73624898FF6005B8233 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Modamic/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhorvath.Modamic;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		9E67C7582489912C005B8233 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF7742AB849CDF1558C26C6 /* Pods-ModamicExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +396,7 @@
 		};
 		9E67C7592489912C005B8233 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF92C94EAC9F1D0779E63A0 /* Pods-ModamicExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,15 +423,6 @@
 			buildConfigurations = (
 				9E67C73224898FF6005B8233 /* Debug */,
 				9E67C73324898FF6005B8233 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9E67C73424898FF6005B8233 /* Build configuration list for PBXNativeTarget "Modamic" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9E67C73524898FF6005B8233 /* Debug */,
-				9E67C73624898FF6005B8233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
