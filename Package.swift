@@ -15,13 +15,12 @@ let package = Package(
         .target(
             name: "Modamic",
             dependencies: [],
-            path: "Sources/Modamic",
-            exclude: ["Example","fastlane"]
+            path: "Sources/Modamic"
         ),
         .testTarget(
             name: "ModamicTests",
             dependencies: ["Modamic"],
-            path: "Tests"
+            path: "Tests/ModamicTests"
         )
     ]
 )
