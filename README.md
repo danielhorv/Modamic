@@ -109,6 +109,12 @@ But there is also a `custom(forPresented: UIViewControllerAnimatedTransitioning,
 pod "Modamic"
 ```
 
+**Swift Package Manager:**
+
+```
+git@github.com:danielhorv/Modamic.git
+```
+
 ## Requirements
 - Swift 5
 - iOS 9
