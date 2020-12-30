@@ -2,11 +2,17 @@ default_platform(:ios)
 
 platform :ios do
   	lane :startCI do
+		cocoapods(
+        clean_install: true,
+        podfile: "Example/Podfile"
+    )
+
 		xcodebuild(
 		    scheme: "Modamic",
 		    configuration: "Release",
 		    clean: true,
-		    build: true
+		    build: true,
+		    workspace: "Example/Modamic.xcworkspace"
 		)
   	end
 end
