@@ -13,5 +13,5 @@ Pod::Spec.new do |spec|
   spec.platform     	  = :ios, "9.0"
   spec.source       	  = { :git => "https://github.com/danielhorv/Modamic.git", :tag => "v#{spec.version}" }
   spec.swift_version 	  = '5.0'
-  spec.source_files  	  = "Modamic/Source/**/*.swift"
+  spec.source_files  	  = "Sources/**/*.swift"
 end

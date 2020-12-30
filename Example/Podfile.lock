@@ -1,0 +1,16 @@
+PODS:
+  - Modamic (0.0.1)
+
+DEPENDENCIES:
+  - Modamic
+
+SPEC REPOS:
+  trunk:
+    - Modamic
+
+SPEC CHECKSUMS:
+  Modamic: 7da85ee7f394cc74291e59655894ad69ce8e5f73
+
+PODFILE CHECKSUM: c6e90e06a6cef6f8139b6ced3cf7512f84ab4bd5
+
+COCOAPODS: 1.9.3
