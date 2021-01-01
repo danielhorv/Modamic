@@ -62,7 +62,10 @@ class ViewController: UIViewController {
         presenter.configuration.modalWidth = .parentFactor(0.8)
         presenter.configuration.animatedTransition = .bottom
         let updateViewController = UpdateViewController()
-        presenter.presentModal(viewController: updateViewController, on: self, completion: nil)
+        presenter.presentModal(viewController: updateViewController, on: self, dismissAction: { viewController  in
+            print("some custom action")
+            viewController.dismiss(animated: true, completion: nil)
+        }, completion: nil)
     }
     
     @objc private func handleLoginButton() {

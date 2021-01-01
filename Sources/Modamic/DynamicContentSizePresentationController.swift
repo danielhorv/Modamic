@@ -16,6 +16,10 @@ public class DynamicContentSizePresentationController: UIPresentationController 
     
     private let originalWidth: CGFloat
     
+    private var dismissAction: ((UIViewController)->())? = { viewController in
+        viewController.dismiss(animated: true, completion: nil)
+    }
+    
     private lazy var dimmingView: UIView = {
         $0.backgroundColor = configuration.dimmingViewBackgroundColor
         
@@ -94,9 +98,10 @@ public class DynamicContentSizePresentationController: UIPresentationController 
         return presentedViewFrame
     }
         
-    public init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, configuration: ModamicConfiguration) {
+    public init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, configuration: ModamicConfiguration, dismissAction: ((UIViewController)->())? = nil) {
         self.configuration = configuration
         self.originalWidth = presentedViewController.view.frame.width
+        self.dismissAction = dismissAction
         
         // Needed because of the right UILabel height calculation
         if #available(iOS 11.0, *) {
@@ -181,7 +186,7 @@ public class DynamicContentSizePresentationController: UIPresentationController 
             presentedViewController.view.endEditing(true)
         }
         
-        presentingViewController.dismiss(animated: true, completion: nil)
+        dismissAction?(presentedViewController)
     }
 
     @objc private func keyboardWasShown(notification: Notification) {

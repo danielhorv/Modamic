@@ -10,6 +10,8 @@ import UIKit
 
 public class ModamicPresenter: NSObject, UIViewControllerTransitioningDelegate {
     
+    private var dismissAction: ((UIViewController)->())?
+    
     public let configuration: ModamicConfiguration
         
     public init(configuration: ModamicConfiguration = ModamicConfiguration()) {
@@ -20,14 +22,15 @@ public class ModamicPresenter: NSObject, UIViewControllerTransitioningDelegate {
 
 public extension ModamicPresenter {
     
-    func presentModal(viewController: UIViewController, on presenterViewController: UIViewController?, completion: (() -> Void)?) {
+    func presentModal(viewController: UIViewController, on presenterViewController: UIViewController?, dismissAction: ((UIViewController)->())? = nil, completion: (() -> Void)?) {
+        self.dismissAction = dismissAction
         viewController.transitioningDelegate = self
         viewController.modalPresentationStyle = .custom
         presenterViewController?.present(viewController, animated: true, completion: completion)
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return DynamicContentSizePresentationController(presentedViewController: presented, presenting: presenting, configuration: configuration)
+        return DynamicContentSizePresentationController(presentedViewController: presented, presenting: presenting, configuration: configuration, dismissAction: dismissAction)
      }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
