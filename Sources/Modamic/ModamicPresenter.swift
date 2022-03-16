@@ -12,7 +12,7 @@ public class ModamicPresenter: NSObject, UIViewControllerTransitioningDelegate {
     
     private var dismissAction: ((UIViewController)->())?
     
-    public let configuration: ModamicConfiguration
+    public var configuration: ModamicConfiguration
         
     public init(configuration: ModamicConfiguration = ModamicConfiguration()) {
         self.configuration = configuration
