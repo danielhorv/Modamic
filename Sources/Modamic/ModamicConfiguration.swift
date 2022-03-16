@@ -70,5 +70,7 @@ public struct ModamicConfiguration {
     public var modalWidth: ModalWidth = .parentFactor(0.9)
     
     /// Animated transition for the modal
-    public var animatedTransition: AnimatedTransition = .bottom    
+    public var animatedTransition: AnimatedTransition = .bottom
+    
+    public init() { }
 }
