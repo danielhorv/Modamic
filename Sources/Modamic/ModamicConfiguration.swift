@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ModamicConfiguration {
+public struct ModamicConfiguration {
     
     public enum ModalVerticalPosition {
         case top
